@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_link_flair_text" label="link_flair_text" language="en" table="x_909466_rl_subreddit_posts_data_source">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_link_flair_text</element>
+            <help/>
+            <hint/>
+            <label>link_flair_text</label>
+            <language>en</language>
+            <name>x_909466_rl_subreddit_posts_data_source</name>
+            <plural>link_flair_texts</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-01-06 00:06:49</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>link_flair_text</sys_name>
+            <sys_package display_value="Reddit Lite" source="x_909466_rl">cb9cf523c37612100ebbbd0ed4013195</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Reddit Lite">cb9cf523c37612100ebbbd0ed4013195</sys_scope>
+            <sys_update_name>sys_documentation_x_909466_rl_subreddit_posts_data_source_u_link_flair_text_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-01-06 00:06:49</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

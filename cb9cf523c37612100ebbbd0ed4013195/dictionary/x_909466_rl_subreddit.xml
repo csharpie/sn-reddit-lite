@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="582eb163c3b612100ebbbd0ed401315e" label="Subreddit" max_length="40" name="x_909466_rl_subreddit" type="collection">
+        <element label="Banned users" max_length="4000" name="banned_users" reference="sys_user" type="glide_list"/>
+        <element attributes="encode_utf8=false" label="Started by" mandatory="true" max_length="32" name="started_by" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Started" mandatory="true" max_length="40" name="started" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Name" mandatory="true" max_length="50" name="name" type="string"/>
+        <element label="Moderator users" max_length="4000" name="moderator_users" reference="sys_user" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="started_by"/>
+        </index>
+    </element>
+</database>

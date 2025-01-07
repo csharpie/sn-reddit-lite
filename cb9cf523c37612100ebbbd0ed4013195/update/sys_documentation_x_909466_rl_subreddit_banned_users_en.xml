@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="banned_users" label="Banned users" language="en" table="x_909466_rl_subreddit">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>banned_users</element>
+            <help/>
+            <hint/>
+            <label>Banned users</label>
+            <language>en</language>
+            <name>x_909466_rl_subreddit</name>
+            <plural>Banned users</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-01-05 23:53:39</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Banned users</sys_name>
+            <sys_package display_value="Reddit Lite" source="x_909466_rl">cb9cf523c37612100ebbbd0ed4013195</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Reddit Lite">cb9cf523c37612100ebbbd0ed4013195</sys_scope>
+            <sys_update_name>sys_documentation_x_909466_rl_subreddit_banned_users_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-01-05 23:53:39</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

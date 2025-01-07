@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <applies_to/>
+        <condition/>
+        <decision_type>allow</decision_type>
+        <description>Allow create for banned_users in x_909466_rl_subreddit, for users with role x_909466_rl.moderator, and if the ACL script returns true.</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_909466_rl_subreddit.banned_users</name>
+        <operation display_value="create">create</operation>
+        <script><![CDATA[answer = function () {
+	return current.moderator_users.indexOf(gs.getUserID()) > -1;
+}();]]></script>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-06 03:53:55</sys_created_on>
+        <sys_id>80073227c3ba52100ebbbd0ed401315b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_909466_rl_subreddit.banned_users</sys_name>
+        <sys_package display_value="Reddit Lite" source="x_909466_rl">cb9cf523c37612100ebbbd0ed4013195</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reddit Lite">cb9cf523c37612100ebbbd0ed4013195</sys_scope>
+        <sys_update_name>sys_security_acl_80073227c3ba52100ebbbd0ed401315b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-06 04:13:46</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>80073227c3ba52100ebbbd0ed401315b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-06 03:53:32</sys_created_on>
+        <sys_id>87d7b267c3ba52100ebbbd0ed401315d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-06 03:53:32</sys_updated_on>
+        <table>sys_security_acl</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

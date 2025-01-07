@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c85082e3c3f612100ebbbd0ed40131ff" extends="task" label="Post" max_length="40" name="x_909466_rl_post" type="collection">
+        <element label="Downs" mandatory="true" max_length="40" name="downs" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Original author" max_length="50" name="original_author" type="string"/>
+        <element label="Is removed" max_length="40" name="is_removed" type="boolean"/>
+        <element label="Ups" mandatory="true" max_length="40" name="ups" type="integer"/>
+        <element label="Id" mandatory="true" max_length="40" name="id" type="string"/>
+        <element label="Score" mandatory="true" max_length="40" name="score" type="integer"/>
+        <element attributes="encode_utf8=false" label="Subreddit" max_length="32" name="subreddit" reference="x_909466_rl_subreddit" type="reference"/>
+    </element>
+</database>
