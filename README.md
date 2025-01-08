@@ -4,7 +4,7 @@ This is an application I'm building for fun to practice for the CAD Exam.
 
 ## Purpose
 
-Allow users to create their own Subreddits inside of ServiceNow of which they subscribe, they can create posts, they comment on posts, and they up-vote/down-vote posts. Reddit Lite Subreddits can be seeded with posts from Reddit.com as well.
+Allow users to create their own Subreddits inside of ServiceNow of which they subscribe, they can create posts, they comment on posts, and they can up-vote/down-vote posts. Reddit Lite Subreddits can be seeded with posts from Reddit.com as well.
 
 ## Business Requirements
 
