@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-09 03:20:58</sys_created_on>
+        <sys_id>fe1d066cc387d6500ebbbd0ed401311f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_909466_rl_subreddit.moderator_users.x_909466_rl.moderator</sys_name>
+        <sys_package display_value="Reddit Lite" source="x_909466_rl">cb9cf523c37612100ebbbd0ed4013195</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reddit Lite">cb9cf523c37612100ebbbd0ed4013195</sys_scope>
+        <sys_security_acl display_value="x_909466_rl_subreddit.moderator_users">f51dca6cc387d6500ebbbd0ed40131bb</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_fe1d066cc387d6500ebbbd0ed401311f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-09 03:20:58</sys_updated_on>
+        <sys_user_role display_value="x_909466_rl.moderator" name="x_909466_rl.moderator">e3bcf9e3c37612100ebbbd0ed4013125</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Reddit Lite">cb9cf523c37612100ebbbd0ed4013195</application>
+        <file_path/>
+        <instance_id>1c527636db59c65402022a591396190e</instance_id>
+        <instance_name>dev255463</instance_name>
+        <name>sys_security_acl_role_fe1d066cc387d6500ebbbd0ed401311f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-09 03:20:58</sys_created_on><sys_id>fe1d066cc387d6500ebbbd0ed401311f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_909466_rl_subreddit.moderator_users.x_909466_rl.moderator</sys_name><sys_package display_value="Reddit Lite" source="x_909466_rl">cb9cf523c37612100ebbbd0ed4013195</sys_package><sys_policy/><sys_scope display_value="Reddit Lite">cb9cf523c37612100ebbbd0ed4013195</sys_scope><sys_security_acl display_value="x_909466_rl_subreddit.moderator_users">f51dca6cc387d6500ebbbd0ed40131bb</sys_security_acl><sys_update_name>sys_security_acl_role_fe1d066cc387d6500ebbbd0ed401311f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-09 03:20:58</sys_updated_on><sys_user_role display_value="x_909466_rl.moderator" name="x_909466_rl.moderator">e3bcf9e3c37612100ebbbd0ed4013125</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-2049246930</payload_hash>
+        <record_name>x_909466_rl_subreddit.moderator_users.x_909466_rl.moderator</record_name>
+        <reverted_from/>
+        <source>269e8c50c3cf9e100ebbbd0ed401314d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-09 03:20:58</sys_created_on>
+        <sys_id>972d4e6cc387d6500ebbbd0ed40131e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19449145b3a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-09 03:20:58</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>9b2d4e6c5287d65093e6a3b5191d88e7</update_guid>
+        <update_guid_history>9b2d4e6c5287d65093e6a3b5191d88e7:-2049246930</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_909466_rl_subreddit.moderator_users.x_909466_rl.moderator">ade85641c3c7d2900ebbbd0ed401315f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-10 17:29:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>5fb1b232e58f42be968296601c94d1c1</sys_id>
+        <sys_metadata>fe1d066cc387d6500ebbbd0ed401311f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_909466_rl_subreddit.moderator_users.x_909466_rl.moderator</sys_name>
+        <sys_package display_value="Reddit Lite" source="x_909466_rl">cb9cf523c37612100ebbbd0ed4013195</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Reddit Lite">cb9cf523c37612100ebbbd0ed4013195</sys_scope>
+        <sys_scope_delete display_value="">65f8497fbac94d1ebc8c2782bcebe004</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_fe1d066cc387d6500ebbbd0ed401311f</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_fe1d066cc387d6500ebbbd0ed401311f">972d4e6cc387d6500ebbbd0ed40131e8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-10 17:29:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
