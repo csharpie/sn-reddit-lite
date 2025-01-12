@@ -1,6 +1,8 @@
 # Reddit Lite
 
-This is an application I'm building for fun to practice for the CAD Exam.
+An application used strictly to practice for the CAD (Certified Application Developer) Exam.
+
+**Disclaimer**: _The application is intended strictly for personal use ONLY._
 
 ## Purpose
 
