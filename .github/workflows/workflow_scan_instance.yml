@@ -33,7 +33,7 @@ jobs:
                   # Required on suite_scoped, suite_update
                   suiteSysId: 3b539829938d031098b2f83ddd03d676
                   # Required on suite_scoped
-                  appScopeSysIds: ","
+                  appScopeSysIds: cb9cf523c37612100ebbbd0ed4013195
                   # Required on suite_update
                   #updateSetSysIds: 1a2b3c,4d5e6f
               env:
