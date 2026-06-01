@@ -4,6 +4,7 @@
         <can_delegate>true</can_delegate>
         <description/>
         <elevated_privilege>false</elevated_privilege>
+        <federated_id>0uGkLm+3ooA7VJpzFMqsgXiTWjyX3QNMs4wm8MWzxLI=</federated_id>
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_909466_rl.moderator</name>

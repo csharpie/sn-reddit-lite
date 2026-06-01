@@ -5,6 +5,7 @@
         <advanced>true</advanced>
         <applies_to/>
         <condition/>
+        <controlled_by_refs/>
         <decision_type>allow</decision_type>
         <description>Allow create for banned_users in x_909466_rl_subreddit, for users with role x_909466_rl.moderator, and if the ACL script returns true.</description>
         <local_or_existing>Local</local_or_existing>

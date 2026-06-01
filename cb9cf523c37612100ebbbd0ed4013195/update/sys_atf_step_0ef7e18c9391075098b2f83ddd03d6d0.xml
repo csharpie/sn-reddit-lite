@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description>Assert that the output is a list of two sys_user records.</description>
+        <display_name>Combine test users into list</display_name>
+        <inputs/>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>4</order>
+        <step_config display_value="Combine test users into list">ec8f67a99309831098b2f83ddd03d6fb</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 00:05:15</sys_created_on>
+        <sys_id>0ef7e18c9391075098b2f83ddd03d6d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Combine test users into list</sys_name>
+        <sys_package display_value="Reddit Lite" source="x_909466_rl">cb9cf523c37612100ebbbd0ed4013195</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reddit Lite">cb9cf523c37612100ebbbd0ed4013195</sys_scope>
+        <sys_update_name>sys_atf_step_0ef7e18c9391075098b2f83ddd03d6d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 00:05:15</sys_updated_on>
+        <table/>
+        <test display_value="Multiple new banned users should be notified">a05458a9938d031098b2f83ddd03d6a3</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=0ef7e18c9391075098b2f83ddd03d6d0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>0ef7e18c9391075098b2f83ddd03d6d0</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 00:05:19</sys_created_on>
+        <sys_id>1208a98c9391075098b2f83ddd03d668</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 00:05:19</sys_updated_on>
+        <value/>
+        <variable display_value="User 2">83d373e19349831098b2f83ddd03d63e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>0ef7e18c9391075098b2f83ddd03d6d0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 00:05:19</sys_created_on>
+        <sys_id>da08a98c9391075098b2f83ddd03d667</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 00:05:19</sys_updated_on>
+        <value/>
+        <variable display_value="User 1">6d123bed9309831098b2f83ddd03d653</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0ef7e18c9391075098b2f83ddd03d6d0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>u_user_1</field>
+        <id>0ef7e18c9391075098b2f83ddd03d6d0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 00:05:19</sys_created_on>
+        <sys_id>1a08a98c9391075098b2f83ddd03d667</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 00:05:19</sys_updated_on>
+        <table>var__m_atf_input_variable_ec8f67a99309831098b2f83ddd03d6fb</table>
+        <value>{{step['3f27d469938d031098b2f83ddd03d6b4'].user}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>u_user_2</field>
+        <id>0ef7e18c9391075098b2f83ddd03d6d0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 00:05:19</sys_created_on>
+        <sys_id>d208a98c9391075098b2f83ddd03d667</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 00:05:19</sys_updated_on>
+        <table>var__m_atf_input_variable_ec8f67a99309831098b2f83ddd03d6fb</table>
+        <value>{{step['9d87982193cd031098b2f83ddd03d6ec'].user}}</value>
+    </sys_element_mapping>
+</record_update>
