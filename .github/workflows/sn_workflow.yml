@@ -23,6 +23,6 @@ jobs:
               with:
                 testSuiteSysId: 3b539829938d031098b2f83ddd03d676
               env:
-                  nowUsername: ${{ secrets.NOW_USERNAME }}
-                  nowPassword: ${{ secrets.NOW_PASSWORD }}
-                  nowScanInstance: ${{ secrets.NOW_SCAN_INSTANCE }}
+                nowUsername: ${{ secrets.NOW_USERNAME }}
+                nowPassword: ${{ secrets.NOW_PASSWORD }}
+                nowInstallInstance: ${{ secrets.NOW_SCAN_INSTANCE }}
