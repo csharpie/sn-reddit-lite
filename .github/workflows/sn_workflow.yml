@@ -18,11 +18,11 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: ServiceNow CI/CD Run ATF Test Suite
-              uses: ServiceNow/sncicd-tests-run@2.0.0
-              with:
-                testSuiteSysId: 3b539829938d031098b2f83ddd03d676
-              env:
-                nowUsername: ${{ secrets.NOW_USERNAME }}
-                nowPassword: ${{ secrets.NOW_PASSWORD }}
-                nowInstallInstance: ${{ secrets.NOW_SCAN_INSTANCE }}
+          - name: ServiceNow CI/CD Run ATF Test Suite
+            uses: ServiceNow/sncicd-tests-run@2.0.0
+            with:
+              testSuiteSysId: 3b539829938d031098b2f83ddd03d676
+            env:
+              nowUsername: ${{ secrets.NOW_USERNAME }}
+              nowPassword: ${{ secrets.NOW_PASSWORD }}
+              nowInstallInstance: ${{ secrets.NOW_SCAN_INSTANCE }}
