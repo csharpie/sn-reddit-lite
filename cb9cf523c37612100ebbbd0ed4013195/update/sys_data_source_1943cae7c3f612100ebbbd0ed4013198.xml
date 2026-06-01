@@ -23,6 +23,7 @@
         <format>JSON</format>
         <glide_keystore>false</glide_keystore>
         <header_row>0</header_row>
+        <import_connection_alias/>
         <import_set_table_label>Subreddit Posts Data Source</import_set_table_label>
         <import_set_table_name>x_909466_rl_subreddit_posts_data_source</import_set_table_name>
         <instance_name/>
@@ -81,6 +82,7 @@
         <table_name/>
         <type>File</type>
         <use_batch_import>false</use_batch_import>
+        <use_import_connection_alias>false</use_import_connection_alias>
         <use_integrated_authentication>false</use_integrated_authentication>
         <use_last_run_datetime>false</use_last_run_datetime>
         <xpath_root_node/>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description>Open the 'Subreddit' form with id '{{Step 3: Record Insert.Record}}'</description>
+        <display_name>Open an Existing Record</display_name>
+        <inputs/>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>6</order>
+        <step_config display_value="Open an Existing Record">5f2e0e535332120028bc29cac2dc34d3</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-31 23:49:17</sys_created_on>
+        <sys_id>043425449391075098b2f83ddd03d6cc</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Open an Existing Record</sys_name>
+        <sys_package display_value="Reddit Lite" source="x_909466_rl">cb9cf523c37612100ebbbd0ed4013195</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reddit Lite">cb9cf523c37612100ebbbd0ed4013195</sys_scope>
+        <sys_update_name>sys_atf_step_043425449391075098b2f83ddd03d6cc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 00:05:31</sys_updated_on>
+        <table>x_909466_rl_subreddit</table>
+        <test display_value="Multiple new banned users should be notified">a05458a9938d031098b2f83ddd03d6a3</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=043425449391075098b2f83ddd03d6cc"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>043425449391075098b2f83ddd03d6cc</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-31 23:49:17</sys_created_on>
+        <sys_id>23542d449391075098b2f83ddd03d6a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-31 23:49:17</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Selected Tab Index">c2eb56e853422110248dddeeff7b1261</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>043425449391075098b2f83ddd03d6cc</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-31 23:49:17</sys_created_on>
+        <sys_id>63542d449391075098b2f83ddd03d6a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-31 23:49:17</sys_updated_on>
+        <value>standard_ui</value>
+        <variable display_value="Form UI">17d732a9c7a333005e5c45b881c26007</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>043425449391075098b2f83ddd03d6cc</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-31 23:49:17</sys_created_on>
+        <sys_id>67542d449391075098b2f83ddd03d6a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-31 23:49:17</sys_updated_on>
+        <value>record</value>
+        <variable display_value="Record path">74d6e7a0a3023110571967d1361e616b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>043425449391075098b2f83ddd03d6cc</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-31 23:49:17</sys_created_on>
+        <sys_id>a7542d449391075098b2f83ddd03d6a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-31 23:49:17</sys_updated_on>
+        <value/>
+        <variable display_value="Record">ad351a4e53a0220002c6435723dc34f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>043425449391075098b2f83ddd03d6cc</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-31 23:49:17</sys_created_on>
+        <sys_id>ab542d449391075098b2f83ddd03d6a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-31 23:49:17</sys_updated_on>
+        <value>x_909466_rl_subreddit</value>
+        <variable display_value="Table">b124164e53a0220002c6435723dc34c5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>043425449391075098b2f83ddd03d6cc</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-31 23:49:17</sys_created_on>
+        <sys_id>eb542d449391075098b2f83ddd03d6a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-31 23:49:17</sys_updated_on>
+        <value/>
+        <variable display_value="View">6e55da4e53a0220002c6435723dc34a0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=043425449391075098b2f83ddd03d6cc"/>
+    <sys_element_mapping action="DELETE">
+        <field>record_id</field>
+        <id>043425449391075098b2f83ddd03d6cc</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-31 23:49:17</sys_created_on>
+        <sys_id>27542d449391075098b2f83ddd03d6a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-31 23:49:17</sys_updated_on>
+        <table>var__m_atf_input_variable_5f2e0e535332120028bc29cac2dc34d3</table>
+        <value>{{step['234618a9938d031098b2f83ddd03d6d7'].record_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>selected_tab_index</field>
+        <id>043425449391075098b2f83ddd03d6cc</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-31 23:49:17</sys_created_on>
+        <sys_id>af542d449391075098b2f83ddd03d6a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-31 23:49:17</sys_updated_on>
+        <table>var__m_atf_input_variable_5f2e0e535332120028bc29cac2dc34d3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>view</field>
+        <id>043425449391075098b2f83ddd03d6cc</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-31 23:49:17</sys_created_on>
+        <sys_id>6b542d449391075098b2f83ddd03d6a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-31 23:49:17</sys_updated_on>
+        <table>var__m_atf_input_variable_5f2e0e535332120028bc29cac2dc34d3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Reddit Lite">cb9cf523c37612100ebbbd0ed4013195</application>
+        <file_path/>
+        <instance_id>74b98e9affcc4fdcc812f8e4fc4fd915</instance_id>
+        <instance_name>dev375200</instance_name>
+        <name>sys_atf_step_043425449391075098b2f83ddd03d6cc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><callable_outputs/><copied_from/><description>Open the 'Subreddit' form with id '{{Step 3: Record Insert.Record}}'</description><display_name>Open an Existing Record</display_name><inputs/><inputs/><mugshots_cache_json/><notes/><order>6</order><step_config display_value="Open an Existing Record">5f2e0e535332120028bc29cac2dc34d3</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-31 23:49:17</sys_created_on><sys_id>043425449391075098b2f83ddd03d6cc</sys_id><sys_mod_count>9</sys_mod_count><sys_name>Open an Existing Record</sys_name><sys_package display_value="Reddit Lite" source="x_909466_rl">cb9cf523c37612100ebbbd0ed4013195</sys_package><sys_policy/><sys_scope display_value="Reddit Lite">cb9cf523c37612100ebbbd0ed4013195</sys_scope><sys_update_name>sys_atf_step_043425449391075098b2f83ddd03d6cc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-01 00:05:31</sys_updated_on><table>x_909466_rl_subreddit</table><test display_value="Multiple new banned users should be notified">a05458a9938d031098b2f83ddd03d6a3</test><timeout/><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=043425449391075098b2f83ddd03d6cc"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>043425449391075098b2f83ddd03d6cc</document_key><order>400</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-31 23:49:17</sys_created_on><sys_id>23542d449391075098b2f83ddd03d6a4</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-31 23:49:17</sys_updated_on><value>1</value><variable display_value="Selected Tab Index">c2eb56e853422110248dddeeff7b1261</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>043425449391075098b2f83ddd03d6cc</document_key><order>50</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-31 23:49:17</sys_created_on><sys_id>63542d449391075098b2f83ddd03d6a3</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-31 23:49:17</sys_updated_on><value>standard_ui</value><variable display_value="Form UI">17d732a9c7a333005e5c45b881c26007</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>043425449391075098b2f83ddd03d6cc</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-31 23:49:17</sys_created_on><sys_id>67542d449391075098b2f83ddd03d6a4</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-31 23:49:17</sys_updated_on><value>record</value><variable display_value="Record path">74d6e7a0a3023110571967d1361e616b</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>043425449391075098b2f83ddd03d6cc</document_key><order>200</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-31 23:49:17</sys_created_on><sys_id>a7542d449391075098b2f83ddd03d6a3</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-31 23:49:17</sys_updated_on><value/><variable display_value="Record">ad351a4e53a0220002c6435723dc34f0</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>043425449391075098b2f83ddd03d6cc</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-31 23:49:17</sys_created_on><sys_id>ab542d449391075098b2f83ddd03d6a4</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-31 23:49:17</sys_updated_on><value>x_909466_rl_subreddit</value><variable display_value="Table">b124164e53a0220002c6435723dc34c5</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>043425449391075098b2f83ddd03d6cc</document_key><order>300</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-31 23:49:17</sys_created_on><sys_id>eb542d449391075098b2f83ddd03d6a3</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-31 23:49:17</sys_updated_on><value/><variable display_value="View">6e55da4e53a0220002c6435723dc34a0</variable></sys_variable_value><sys_element_mapping action="delete_multiple" query="id=043425449391075098b2f83ddd03d6cc"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>record_id</field><id>043425449391075098b2f83ddd03d6cc</id><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-31 23:49:17</sys_created_on><sys_id>27542d449391075098b2f83ddd03d6a2</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-31 23:49:17</sys_updated_on><table>var__m_atf_input_variable_5f2e0e535332120028bc29cac2dc34d3</table><value>{{step['234618a9938d031098b2f83ddd03d6d7'].record_id}}</value></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>selected_tab_index</field><id>043425449391075098b2f83ddd03d6cc</id><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-31 23:49:17</sys_created_on><sys_id>af542d449391075098b2f83ddd03d6a2</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-31 23:49:17</sys_updated_on><table>var__m_atf_input_variable_5f2e0e535332120028bc29cac2dc34d3</table><value/></sys_element_mapping><sys_element_mapping action="INSERT_OR_UPDATE"><field>view</field><id>043425449391075098b2f83ddd03d6cc</id><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-31 23:49:17</sys_created_on><sys_id>6b542d449391075098b2f83ddd03d6a2</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-31 23:49:17</sys_updated_on><table>var__m_atf_input_variable_5f2e0e535332120028bc29cac2dc34d3</table><value/></sys_element_mapping></record_update>]]></payload>
+        <payload_hash>840838651</payload_hash>
+        <record_name>Open an Existing Record</record_name>
+        <reverted_from/>
+        <source>2b4ea0d593f0031098b2f83ddd03d60d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 00:05:31</sys_created_on>
+        <sys_id>1118e98c9391075098b2f83ddd03d6e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e807ffc960000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 00:05:31</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>5d18e98c4691075046adacda803e68df</update_guid>
+        <update_guid_history>5d18e98c4691075046adacda803e68df:840838651,4a08698c45910750d3a35f7520bb88e3:-1581522436,8d95e90858910750908a6781772adabd:840838651,3264ad44fc91075005277258d8fad44d:-1031767558,27542d44e6910750884c516acbe4acb5:291083773</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 00:09:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>429f56aa999a43f4b3d3594c48789b61</sys_id>
+        <sys_metadata>043425449391075098b2f83ddd03d6cc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open an Existing Record</sys_name>
+        <sys_package display_value="Reddit Lite" source="x_909466_rl">cb9cf523c37612100ebbbd0ed4013195</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Reddit Lite">cb9cf523c37612100ebbbd0ed4013195</sys_scope>
+        <sys_scope_delete display_value="">65f8497fbac94d1ebc8c2782bcebe004</sys_scope_delete>
+        <sys_update_name>sys_atf_step_043425449391075098b2f83ddd03d6cc</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_043425449391075098b2f83ddd03d6cc">1118e98c9391075098b2f83ddd03d6e1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 00:09:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

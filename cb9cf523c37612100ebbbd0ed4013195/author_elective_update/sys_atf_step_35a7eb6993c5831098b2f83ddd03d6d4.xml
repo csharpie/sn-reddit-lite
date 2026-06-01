@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="DELETE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description>Run Server Side Validation Script</description>
+        <display_name>Run Server Side Script</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes>Combine test users, Mary Candles and Bill Cheeseman</notes>
+        <order>4</order>
+        <step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-24 14:59:50</sys_created_on>
+        <sys_id>35a7eb6993c5831098b2f83ddd03d6d4</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="Reddit Lite" source="x_909466_rl">cb9cf523c37612100ebbbd0ed4013195</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reddit Lite">cb9cf523c37612100ebbbd0ed4013195</sys_scope>
+        <sys_update_name>sys_atf_step_35a7eb6993c5831098b2f83ddd03d6d4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-24 15:02:27</sys_updated_on>
+        <table/>
+        <test display_value="Multiple new banned users should be notified">a05458a9938d031098b2f83ddd03d6a3</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="DELETE" query="document_key=35a7eb6993c5831098b2f83ddd03d6d4"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>35a7eb6993c5831098b2f83ddd03d6d4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-24 14:59:50</sys_created_on>
+        <sys_id>2f08eb6993c5831098b2f83ddd03d6c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-24 14:59:50</sys_updated_on>
+        <value>3.1</value>
+        <variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_atf_step</document>
+        <document_key>35a7eb6993c5831098b2f83ddd03d6d4</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-24 14:59:50</sys_created_on>
+        <sys_id>6308eb6993c5831098b2f83ddd03d6c3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-24 15:02:27</sys_updated_on>
+        <value>// You can use this step to execute a variety of server-side javascript tests including&#13;
+// jasmine tests and custom assertions&#13;
+//&#13;
+//&#13;
+// Pass or fail a step: Override the step outcome to pass or fail. This is ignored &#13;
+//                      by jasmine tests&#13;
+//&#13;
+//  - Return true from the main function body to pass the step&#13;
+//  - Return false from the main function body to fail the step&#13;
+//&#13;
+//&#13;
+// outputs:        Pre-defined Step config Output variables to set on this step during &#13;
+//                 execution that are available to later steps&#13;
+//&#13;
+// steps(SYS_ID):  A function to retrieve Output variable data from a step that executed&#13;
+//                 earlier in the test. The desired step's sys_id is required&#13;
+//&#13;
+// params:         The current test run data set's parameter data including both &#13;
+//                 exclusive and shared parameters (only used in parameterized tests)&#13;
+//&#13;
+// reusableInputs: Input values from the current reusable test (only used in reusable tests)&#13;
+//&#13;
+//  Example:&#13;
+//&#13;
+//      // Test step 1 - add data&#13;
+//      var gr = new GlideRecord('sc_task');&#13;
+//      // If parameterized testing is enabled, parameters are stored in the params object&#13;
+//      gr.setValue('short_description', params.u_my_short_description)&#13;
+//      gr.setValue('caller', params.u_my_user.manager)&#13;
+//      // The syntax for reusable test inputs is similar&#13;
+//      gr.setValue('short_description', reusableInputs.u_my_short_description)&#13;
+//      // this sample step's Step config has Output variables named table and record_id&#13;
+//      outputs.table = 'sc_task';&#13;
+//      outputs.record_id = gr.insert();&#13;
+//&#13;
+//      // Test step 2 - access added data and validate&#13;
+//      // check that the record exists (or that business logic changed it)&#13;
+//      var gr = new GlideRecord("sc_task");&#13;
+//      gr.get(steps(PREVIOUS_STEP_SYS_ID).record_id);&#13;
+//      assertEqual({name: "task gr exists", shouldbe: true, value: gr.isValidRecord()});&#13;
+//&#13;
+//&#13;
+// stepResult.setOutputMessage: Log a message to step results after step executes.&#13;
+//                              Can only be called once or will overwrite previous &#13;
+//                              message&#13;
+//&#13;
+//  Example:&#13;
+//&#13;
+//      var gr = new GlideRecord('sc_task');&#13;
+//      gr.setValue('short_description', 'verify task can be inserted');&#13;
+//      var grSysId = gr.insert();&#13;
+//      var justCreatedGR = new GlideRecord('sc_task');&#13;
+//      if (justCreatedGR.get(grSysId)) {&#13;
+//            stepResult.setOutputMessage("Successfully inserted task record");&#13;
+//            return true; // pass the step&#13;
+//      } else { &#13;
+//            stepResult.setOutputMessage("Failed to insert task record");&#13;
+//            return false; // fail the step&#13;
+//      }&#13;
+//&#13;
+//&#13;
+// Note: describe is only supported in Global scope.&#13;
+// Use 'describe' to create a suite of test scripts and 'it' to define test expectations&#13;
+//&#13;
+//  Example jasmine test:&#13;
+//&#13;
+//      describe('my suite of script tests', function() {&#13;
+//            it('should meet expectations', function() {&#13;
+//                  expect(true).not.toBe(false);&#13;
+//            });&#13;
+//      });&#13;
+//      // make sure to uncomment jasmine.getEnv().execute(); outside the function body&#13;
+//&#13;
+//&#13;
+// assertEqual: A function used to compare that assertion.shouldbe == assertion.value;&#13;
+//              in case of failure it throws an Error and logs that the assertion by&#13;
+//              name has failed&#13;
+//&#13;
+//  Example:&#13;
+//&#13;
+//      var testAssertion = {&#13;
+//            name: "my test assertion",&#13;
+//            shouldbe: "expected value"&#13;
+//            value: "actual value",&#13;
+//      };&#13;
+//      assertEqual(testAssertion); // throws Error, logs message to test step output&#13;
+//&#13;
+(function(outputs, steps, params, stepResult, assertEqual) {&#13;
+    outputs.table_id = steps["9d87982193cd031098b2f83ddd03d6ec"] + "," + steps["3f27d469938d031098b2f83ddd03d6b4"];&#13;
+&#13;
+})(outputs, steps, params, stepResult, assertEqual);&#13;
+// uncomment the next line to execute this script as a jasmine test&#13;
+//jasmine.getEnv().execute();&#13;
+</value>
+        <variable display_value="Test script">989d9e235324220002c6435723dc3484</variable>
+    </sys_variable_value>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Reddit Lite">cb9cf523c37612100ebbbd0ed4013195</application>
+        <file_path/>
+        <instance_id>74b98e9affcc4fdcc812f8e4fc4fd915</instance_id>
+        <instance_name>dev375200</instance_name>
+        <name>sys_atf_step_35a7eb6993c5831098b2f83ddd03d6d4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step"><sys_atf_step action="INSERT_OR_UPDATE"><active>true</active><callable_outputs/><copied_from/><description>Run Server Side Validation Script</description><display_name>Run Server Side Script</display_name><inputs/><mugshots_cache_json/><notes>Combine test users, Mary Candles and Bill Cheeseman</notes><order>4</order><step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config><sys_class_name>sys_atf_step</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-24 14:59:50</sys_created_on><sys_id>35a7eb6993c5831098b2f83ddd03d6d4</sys_id><sys_mod_count>4</sys_mod_count><sys_name>Run Server Side Script</sys_name><sys_package display_value="Reddit Lite" source="x_909466_rl">cb9cf523c37612100ebbbd0ed4013195</sys_package><sys_policy/><sys_scope display_value="Reddit Lite">cb9cf523c37612100ebbbd0ed4013195</sys_scope><sys_update_name>sys_atf_step_35a7eb6993c5831098b2f83ddd03d6d4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-24 15:02:27</sys_updated_on><table/><test display_value="Multiple new banned users should be notified">a05458a9938d031098b2f83ddd03d6a3</test><timeout/><warning_message/></sys_atf_step><sys_variable_value action="delete_multiple" query="document_key=35a7eb6993c5831098b2f83ddd03d6d4"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>35a7eb6993c5831098b2f83ddd03d6d4</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-24 14:59:50</sys_created_on><sys_id>2f08eb6993c5831098b2f83ddd03d6c2</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-24 14:59:50</sys_updated_on><value>3.1</value><variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_atf_step</document><document_key>35a7eb6993c5831098b2f83ddd03d6d4</document_key><order>200</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-24 14:59:50</sys_created_on><sys_id>6308eb6993c5831098b2f83ddd03d6c3</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-24 15:02:27</sys_updated_on><value>// You can use this step to execute a variety of server-side javascript tests including&#13;
+// jasmine tests and custom assertions&#13;
+//&#13;
+//&#13;
+// Pass or fail a step: Override the step outcome to pass or fail. This is ignored &#13;
+//                      by jasmine tests&#13;
+//&#13;
+//  - Return true from the main function body to pass the step&#13;
+//  - Return false from the main function body to fail the step&#13;
+//&#13;
+//&#13;
+// outputs:        Pre-defined Step config Output variables to set on this step during &#13;
+//                 execution that are available to later steps&#13;
+//&#13;
+// steps(SYS_ID):  A function to retrieve Output variable data from a step that executed&#13;
+//                 earlier in the test. The desired step's sys_id is required&#13;
+//&#13;
+// params:         The current test run data set's parameter data including both &#13;
+//                 exclusive and shared parameters (only used in parameterized tests)&#13;
+//&#13;
+// reusableInputs: Input values from the current reusable test (only used in reusable tests)&#13;
+//&#13;
+//  Example:&#13;
+//&#13;
+//      // Test step 1 - add data&#13;
+//      var gr = new GlideRecord('sc_task');&#13;
+//      // If parameterized testing is enabled, parameters are stored in the params object&#13;
+//      gr.setValue('short_description', params.u_my_short_description)&#13;
+//      gr.setValue('caller', params.u_my_user.manager)&#13;
+//      // The syntax for reusable test inputs is similar&#13;
+//      gr.setValue('short_description', reusableInputs.u_my_short_description)&#13;
+//      // this sample step's Step config has Output variables named table and record_id&#13;
+//      outputs.table = 'sc_task';&#13;
+//      outputs.record_id = gr.insert();&#13;
+//&#13;
+//      // Test step 2 - access added data and validate&#13;
+//      // check that the record exists (or that business logic changed it)&#13;
+//      var gr = new GlideRecord("sc_task");&#13;
+//      gr.get(steps(PREVIOUS_STEP_SYS_ID).record_id);&#13;
+//      assertEqual({name: "task gr exists", shouldbe: true, value: gr.isValidRecord()});&#13;
+//&#13;
+//&#13;
+// stepResult.setOutputMessage: Log a message to step results after step executes.&#13;
+//                              Can only be called once or will overwrite previous &#13;
+//                              message&#13;
+//&#13;
+//  Example:&#13;
+//&#13;
+//      var gr = new GlideRecord('sc_task');&#13;
+//      gr.setValue('short_description', 'verify task can be inserted');&#13;
+//      var grSysId = gr.insert();&#13;
+//      var justCreatedGR = new GlideRecord('sc_task');&#13;
+//      if (justCreatedGR.get(grSysId)) {&#13;
+//            stepResult.setOutputMessage("Successfully inserted task record");&#13;
+//            return true; // pass the step&#13;
+//      } else { &#13;
+//            stepResult.setOutputMessage("Failed to insert task record");&#13;
+//            return false; // fail the step&#13;
+//      }&#13;
+//&#13;
+//&#13;
+// Note: describe is only supported in Global scope.&#13;
+// Use 'describe' to create a suite of test scripts and 'it' to define test expectations&#13;
+//&#13;
+//  Example jasmine test:&#13;
+//&#13;
+//      describe('my suite of script tests', function() {&#13;
+//            it('should meet expectations', function() {&#13;
+//                  expect(true).not.toBe(false);&#13;
+//            });&#13;
+//      });&#13;
+//      // make sure to uncomment jasmine.getEnv().execute(); outside the function body&#13;
+//&#13;
+//&#13;
+// assertEqual: A function used to compare that assertion.shouldbe == assertion.value;&#13;
+//              in case of failure it throws an Error and logs that the assertion by&#13;
+//              name has failed&#13;
+//&#13;
+//  Example:&#13;
+//&#13;
+//      var testAssertion = {&#13;
+//            name: "my test assertion",&#13;
+//            shouldbe: "expected value"&#13;
+//            value: "actual value",&#13;
+//      };&#13;
+//      assertEqual(testAssertion); // throws Error, logs message to test step output&#13;
+//&#13;
+(function(outputs, steps, params, stepResult, assertEqual) {&#13;
+    outputs.table_id = steps["9d87982193cd031098b2f83ddd03d6ec"] + "," + steps["3f27d469938d031098b2f83ddd03d6b4"];&#13;
+&#13;
+})(outputs, steps, params, stepResult, assertEqual);&#13;
+// uncomment the next line to execute this script as a jasmine test&#13;
+//jasmine.getEnv().execute();&#13;
+</value><variable display_value="Test script">989d9e235324220002c6435723dc3484</variable></sys_variable_value></record_update>]]></payload>
+        <payload_hash>274745848</payload_hash>
+        <record_name>Run Server Side Script</record_name>
+        <reverted_from/>
+        <source>2b4ea0d593f0031098b2f83ddd03d60d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-24 15:02:27</sys_created_on>
+        <sys_id>4ea8672d93c5831098b2f83ddd03d67e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e5a8245460000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-24 15:02:27</sys_updated_on>
+        <type>Test Step</type>
+        <update_guid>8aa8672dd5c583100fcb286890690c7d</update_guid>
+        <update_guid_history>8aa8672dd5c583100fcb286890690c7d:274745848,2b78632dccc58310ff84d6fe3f572f6d:-1626499843,702867e901c58310dc7ee9974394ba1b:-1096266083,2f08a3e9cec583100972718ab7635c44:113953182</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-24 16:00:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_atf_step">sys_atf_step</sys_db_object>
+        <sys_id>7d13b8856d3d41b4bdea62ac0d89a2a4</sys_id>
+        <sys_metadata>35a7eb6993c5831098b2f83ddd03d6d4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="Reddit Lite" source="x_909466_rl">cb9cf523c37612100ebbbd0ed4013195</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Reddit Lite">cb9cf523c37612100ebbbd0ed4013195</sys_scope>
+        <sys_scope_delete display_value="">65f8497fbac94d1ebc8c2782bcebe004</sys_scope_delete>
+        <sys_update_name>sys_atf_step_35a7eb6993c5831098b2f83ddd03d6d4</sys_update_name>
+        <sys_update_version display_value="sys_atf_step_35a7eb6993c5831098b2f83ddd03d6d4">4ea8672d93c5831098b2f83ddd03d67e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-24 16:00:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
